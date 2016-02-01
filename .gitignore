@@ -52,4 +52,4 @@ ant_target
 test-output
 build.xml
 src/runSuite/TestNG.xml
-*.html
+test-output
