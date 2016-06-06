@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2044" started-at="2016-01-21T09:22:43Z" finished-at="2016-01-21T09:22:45Z">
+  <suite name="Suite" duration-ms="199869" started-at="2016-06-06T05:29:53Z" finished-at="2016-06-06T05:33:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2044" started-at="2016-01-21T09:22:43Z" finished-at="2016-01-21T09:22:45Z">
-      <class name="mobileTest.test123">
-        <test-method status="PASS" signature="test()[pri:0, instance:mobileTest.test123@a52a72a]" name="test" duration-ms="2023" started-at="2016-01-21T17:22:43Z" finished-at="2016-01-21T17:22:45Z">
+    <test name="MyTest" duration-ms="199869" started-at="2016-06-06T05:29:53Z" finished-at="2016-06-06T05:33:13Z">
+      <class name="mobileTest.VerifyVersion">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mobileTest.VerifyVersion@65c041ff]" name="setUp" is-config="true" duration-ms="1" started-at="2016-06-06T13:33:04Z" finished-at="2016-06-06T13:33:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- mobileTest.test123 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyVersion()[pri:0, instance:mobileTest.VerifyVersion@65c041ff]" name="verifyVersion" duration-ms="9510" started-at="2016-06-06T13:33:04Z" finished-at="2016-06-06T13:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVersion -->
+        <test-method status="PASS" signature="someBaseTeardown()[pri:0, instance:mobileTest.VerifyVersion@65c041ff]" name="someBaseTeardown" is-config="true" duration-ms="0" started-at="2016-06-06T13:33:13Z" finished-at="2016-06-06T13:33:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- someBaseTeardown -->
+      </class> <!-- mobileTest.VerifyVersion -->
+      <class name="mobileTest.AppiumTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:mobileTest.AppiumTest@5632af89]" name="setUp" is-config="true" duration-ms="132173" started-at="2016-06-06T13:29:53Z" finished-at="2016-06-06T13:32:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="signIn()[pri:0, instance:mobileTest.AppiumTest@5632af89]" name="signIn" duration-ms="58161" started-at="2016-06-06T13:32:06Z" finished-at="2016-06-06T13:33:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method status="PASS" signature="someBaseTeardown()[pri:0, instance:mobileTest.AppiumTest@5632af89]" name="someBaseTeardown" is-config="true" duration-ms="0" started-at="2016-06-06T13:33:04Z" finished-at="2016-06-06T13:33:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- someBaseTeardown -->
+      </class> <!-- mobileTest.AppiumTest -->
+    </test> <!-- MyTest -->
+  </suite> <!-- Suite -->
 </testng-results>

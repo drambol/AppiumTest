@@ -53,3 +53,4 @@ test-output
 build.xml
 src/runSuite/TestNG.xml
 test-output
+*.html

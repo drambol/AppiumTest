@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>  
 <Config>
-	<TestEnvironment>Stage</TestEnvironment>
+	<TestEnvironment>QA12</TestEnvironment>
 	<TestAccounts>
-		<Username>kenx2015@emc.com</Username>
-		<Password>test1234</Password>
+		<Username>ken.xu@emc.com</Username>
+		<Password>88888888</Password>
 	</TestAccounts>
     <iOS>null</iOS>
     <Android>

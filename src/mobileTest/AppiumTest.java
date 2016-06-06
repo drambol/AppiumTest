@@ -27,7 +27,7 @@ public class AppiumTest extends MobileCaseTemplate {
 		WebElement signInButton = driver.findElement(By.name("Sign in to Mozy"));
 		signInButton.click();
 		driver.findElement(By.name("Email address")).sendKeys("kenx2015@emc.com");
-		driver.findElements(By.className("android.widget.EditText")).get(1).sendKeys("Wingzer0");
+		driver.findElements(By.className("android.widget.EditText")).get(1).sendKeys("88888888");
 		driver.findElement(By.name("Sign In")).click();
 		try {
 			logger.info("Now clicking Progress Bar to stop loading...");

@@ -43,7 +43,6 @@ public class MobileCaseTemplate {
 			capabilities.setCapability("deviceName", xmlParser.getNodeValue("deviceName"));
 			capabilities.setCapability("app-package", xmlParser.getNodeValue("app-package"));
 			capabilities.setCapability("app-activity", xmlParser.getNodeValue("app-activity"));
-			cmdCommand = "cmd /c emulator -avd " + xmlParser.getNodeValue("deviceName");
 			
 			//Create an emulator
 			WindowsProcess.killProcess("emulator-arm.exe");
@@ -52,6 +51,7 @@ public class MobileCaseTemplate {
 			cmdCommand = "cmd /c emulator -avd " + xmlParser.getNodeValue("deviceName");
 			WindowsProcess.runProcess(cmdCommand, 60);
 			
+			AppiumService.start();
 			logger.info("Try to create new Appium driver...");
 			for (int i = 0; i < 3; i++) {
 				try {
@@ -59,8 +59,8 @@ public class MobileCaseTemplate {
 					Thread.sleep(3000);
 					break;
 				} catch (UnreachableBrowserException e1) { //Restart appium service.
-					AppiumService.restart(i);
 					logger.info("UnreachableBrowserException, wait Appium service to start... Count " + i);
+					AppiumService.restart(i);
 				} catch (SessionNotCreatedException e2) {
 					logger.info("Automation is encountering SessionNotCreatedException... Count " + i);
 				}

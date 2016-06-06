@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="mobileTest.AppiumTest">
+      <class name="mobileTest.test123">
         <methods>
-          <include name="someBaseTeardown"/>
-          <include name="signIn"/>
-          <include name="setUp"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- mobileTest.AppiumTest -->
+      </class> <!-- mobileTest.test123 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
