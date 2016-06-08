@@ -74,7 +74,7 @@ public class MobileCaseTemplate {
 	@AfterClass(alwaysRun = true)
 	public void someBaseTeardown() {
 		logger.info("You get the end of the case " + testCaseName);
-		driver.quit();
+//		driver.quit();
 	}
 
 }

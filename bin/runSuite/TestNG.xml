@@ -4,7 +4,7 @@
         <classes>  
             <class name="mobileTest.AppiumTest" />
             <class name="mobileTest.VerifyVersion" />
-<!--             <class name="mobileTest.test123" /> -->
+            <class name="mobileTest.MobileTestEnd" />
         </classes>  
     </test>  
 </suite>
