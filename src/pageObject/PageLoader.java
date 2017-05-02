@@ -35,7 +35,7 @@ public class PageLoader {
 	 */
 	public static <T extends PageObject> T load(T pageObject) {
 		WebDriver webDriver = AutoContext.webDriverTL.get();
-		MyPageFactory.initElements(webDriver, pageObject);
+		PageFactory.initElements(webDriver, pageObject);
 		return pageObject;
 	}
 }

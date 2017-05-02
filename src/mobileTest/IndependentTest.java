@@ -28,7 +28,7 @@ public class IndependentTest {
 		capabilities.setCapability("app-package", xmlParser.getNodeValue("app-package"));
 		capabilities.setCapability("app-activity", xmlParser.getNodeValue("app-activity"));
 		System.out.println("Prepare to get the driver!");
-		new SwipeableWebDriver(new URL("http://localhost:8086/wd/hub"), capabilities);
+		new SwipeableWebDriver(new URL("http://localhost:4723/wd/hub"), capabilities);
 		System.out.println("Sasa is a good boy!");
 	}
 	

@@ -22,7 +22,7 @@ public class AppiumTest extends MobileCaseTemplate {
 		if (driver == null) {
 			driver = AutoContext.swipeableWebDriverTL.get();
 		}
-		WebElement acceptButton = driver.findElement(By.name("Accept"));
+		WebElement acceptButton = driver.findElement(By.xpath("//*[@text='Accept']"));
 		acceptButton.click();
 		WebElement signInButton = driver.findElement(By.name("Sign in to Mozy"));
 		signInButton.click();
